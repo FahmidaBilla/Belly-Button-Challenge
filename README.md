@@ -53,7 +53,8 @@ A panel that shows the selected(from the dropdown menu) test subject's demograph
 
 ## Link
 
-
+Please visit the link to explore the dashboard.
+https://fahmidabilla.github.io/Belly-Button-Challenge/
 
 
 
