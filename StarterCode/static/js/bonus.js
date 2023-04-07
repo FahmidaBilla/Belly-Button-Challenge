@@ -1,43 +1,4 @@
-// set url
-//const url = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json"
-
-// Fetch the JSON data and console log output
-// d3.json(url).then(function(data) {
-//     console.log(data);
-// });
-
-// Initializes the page and use D3 to select the dropdown menu
-function init() {
-
-    let dropdownMenu = d3.select("#selDataset");
-
-    // collect the sample names and populate dropdown menu:
-    d3.json(url).then((data) => {
-
-        let names = data.names;
-
-        names.forEach((id) => {
-
-            console.log(id);
-
-            // Add names to the dropdown mene:
-
-            dropdownMenu.append("option").text(id).property("value",id);
-        });
-
-        // Default ID add
-
-        let defaultId = names[0];
-        // console log result
-        console.log(defaultId);
-
-        // create charts and demographic info
-
-        gaugeChart(defaultId);
-    });
-
-};
-
+//Gauge Chart
 //Funtion for charts based on selection
 
 function gaugeChart(newId) {
@@ -100,10 +61,3 @@ function gaugeChart(newId) {
         Plotly.newPlot("gauge", traceDataGauge, layoutGauge);
     });
 };
-// Function to update graphs and info when a new ID is chosen
-function optionChanged(newSample) { 
-
-    gaugeChart(newSample);
-};
-
-init();
