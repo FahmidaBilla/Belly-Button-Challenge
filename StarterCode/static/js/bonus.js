@@ -61,3 +61,4 @@ function gaugeChart(newId) {
         Plotly.newPlot("gauge", traceDataGauge, layoutGauge);
     });
 };
+
