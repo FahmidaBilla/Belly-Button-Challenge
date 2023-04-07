@@ -35,6 +35,7 @@ function init() {
 
         charts(defaultId);
         demoInfo(defaultId);
+        gaugeChart(defaultId);
     });
 
 };
@@ -143,6 +144,7 @@ function optionChanged(newSample) {
 
     charts(newSample);
     demoInfo(newSample);
+    gaugeChart(newSample);
 };
 
 init();
