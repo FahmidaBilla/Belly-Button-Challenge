@@ -41,6 +41,7 @@ A bubble chart displays each sample found in the selected test subject. The size
 A Gauge Chart displays the weekly washing frequency of the selected individual.
 
 
+<img width="510" alt="Screenshot 2023-04-06 at 11 08 52 PM" src="https://user-images.githubusercontent.com/120361200/230534262-abe0e224-eeff-45df-a3ce-5746f95b816d.png">
 
 
 
